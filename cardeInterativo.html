@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    
+    img{
+        width: 100%;
+        cursor: pointer;
+        height: 300px;
+    }
+
+  .container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+   box-shadow: 0 0 10px black;
+   margin-bottom: 150px;
+   background-color: rgba(0, 0, 0, 0.167);
+  }
+  .containe-textos {
+    position: relative;
+    width: 50%;
+    padding: 30px;
+   
+  }
+  .testos{
+    position: absolute;
+    left: 56%;
+    translate:  -50% -50%;
+   top: 50%;
+    width: 100%;
+    text-align: center;
+  
+  
+   
+  }
+  #texto1{
+    opacity: 0;
+    
+  }
+  #texto2{
+    opacity: 0;
+   
+  }
+  #texto3{
+   
+    opacity: 1;
+  }
+  @media(max-width:800px){
+    .container {
+        flex-direction: column;
+    }
+    .testos{
+    position: absolute;
+    left: 0%;
+    translate:  0% 0%;
+    width: 100%;
+    text-align: center;
+  }
+  }
+
+</style>
+<body>
+    <div class="l-fomulario">
+        <form action="">
+          
+        </form>
+        <p></p>
+    </div>
+
+
+
+    <div class="container">
+<div>
+    <img data-foto src="1.jpg" alt="foto1">
+    <img data-foto src="2.jpg" alt="foto2">
+    <img data-foto src="3.jpg" alt="foto3">
+</div>
+<div class="containe-textos">
+    <div class="testos" id="texto1">
+       
+        <h1>construção de paineis</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eaque enim ipsum distinctio magnam. Blanditiis necessitatibus eius quibusdam illum quo. Placeat illo natus temporibus neque architecto tenetur facilis quos dignissimos!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta odit dolor eaque assumenda nulla, minima recusandae, quia nobis quisquam distinctio. Iure perferendis, blanditiis placeat ducimus nobis adipisci doloremque cumque?
+        </p>
+       
+    </div>
+    <div class="testos" id="texto2">
+        <h1>manutenção preventiva</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione corporis voluptate facere itaque nam ipsa dolorum eligendi rerum maiores, recusandae omnis quod nemo iure excepturi cumque quaerat. Quibusdam, aspernatur. Magni.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus minima fuga qui? Iste eaque recusandae beatae nobis earum fuga pariatur nemo, quisquam, nihil, voluptatibus voluptate! Tempora maiores odio laboriosam.
+        </p>
+    </div>
+    <div class="testos" id="texto3">
+        <h1 class="foto1">manutenção corretiva</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque dolorum nulla incidunt, saepe dolor sed vero distinctio eos exercitationem expedita rerum aut accusantium et ea dicta? Optio itaque unde sunt.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit architecto quam voluptatem error sint quae, fuga, perferendis tenetur ex id sed voluptas. Illum quibusdam eos pariatur sunt nemo animi perspiciatis.
+        </p>
+        
+    </div>
+</div>
+    </div>
+    <script src="cardeInterativo.js"></script>
+</body>
+</html>
